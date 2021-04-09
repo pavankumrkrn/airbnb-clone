@@ -1,0 +1,8 @@
+.expImage {
+  border-radius: 10px !important;
+}
+
+.noBorder {
+  border: none !important;
+  cursor: pointer;
+}

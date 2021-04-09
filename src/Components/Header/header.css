@@ -32,3 +32,9 @@
   padding: 10px;
   outline-width: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .header__center > input {
+    width: 70px;
+  }
+}

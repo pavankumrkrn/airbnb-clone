@@ -1,66 +1,41 @@
-import React from 'react'
-import { Banner } from '../Banner/banner'
-import { Card } from "../Card/card";
-import './Home.css'
+import React from "react";
+import { Banner } from "../Banner/banner";
+import BecomeHost from "../BecomeHost/BecomeHost";
+import Discover from "../Discover/Discover";
+import Explore from "../Explore/Explore";
+import Anywhere from "../Live/Anywhere";
+import "./Home.css";
 
 export const Home = () => {
-    return (
-        <div className="home">
-            <Banner />
-            <div className="home__section row">
-                <div className="col-sm-4">
-                    <Card
-                        src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
-                        title="Online Experiences"
-                        description="Unique activities we can do together, led by a world of hosts."
-                    />
-                </div>
-                <div className="col-sm-4">
-
-                    <Card
-                        src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
-                        title="Unique stays"
-                        description="Spaces that are more than just a place to sleep."
-                    />
-                </div>
-                <div className="col-sm-4">
-
-                    <Card
-                        src="https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg?im_w=720"
-                        title="Entire homes"
-                        description="Comfortable private places, with room for friends or family."
-                    />
-                </div>
-            </div>
-            <div className="home__section row">
-                <div className="col-sm-4">
-
-                    <Card
-                        src="https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg"
-                        title="3 Bedroom Flat in Bournemouth"
-                        description="Superhost with a stunning view of the beachside in Sunny Bournemouth"
-                        price="£130/night"
-                    />
-                </div>
-                <div className="col-sm-4">
-
-                    <Card
-                        src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
-                        title="Penthouse in London"
-                        description="Enjoy the amazing sights of London with this stunning penthouse"
-                        price="£350/night"
-                    />
-                </div>
-                <div className="col-sm-4">
-
-                    <Card
-                        src="https://media.nomadicmatt.com/2018/apartment.jpg"
-                        title="1 Bedroom apartment"
-                        description="Superhost with great amenities and a fabolous shopping complex nearby"
-                        price="£70/night"
-                    />
-                </div>
-            </div>
+  return (
+    <div className="home">
+      <Banner />
+      <div className="container">
+        <div className="row mt-5 mb-2">
+          <div className="col-sm-12">
+            <p className="h2 text-left">Explore Nearby</p>
+          </div>
         </div>
-    )
-}
+        <Explore />
+        <div className="row mt-5 mb-2">
+          <div className="col-sm-12">
+            <p className="h2 text-left">Live Anywhere</p>
+          </div>
+        </div>
+        <Anywhere />
+        <div className="mt-5">
+          <BecomeHost />
+        </div>
+        <div className="row mt-5 mb-2">
+          <div className="col-sm-12">
+            <p className="h2 text-left">Discover Experiences</p>
+            <p>Unique activities with local experts – in person or online.</p>
+          </div>
+        </div>
+        <div className="mb-5">
+          <Discover />
+        </div>
+      </div>
+    </div>
+  );
+};
