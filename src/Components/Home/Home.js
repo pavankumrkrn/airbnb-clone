@@ -11,12 +11,12 @@ export const Home = () => {
     <div className="home">
       <Banner />
       <div className="container">
-        <div className="row mt-5 mb-2">
+        {/* <div className="row mt-5 mb-2">
           <div className="col-sm-12">
             <p className="h2 text-left">Explore Nearby</p>
           </div>
         </div>
-        <Explore />
+        <Explore /> */}
         <div className="row mt-5 mb-2">
           <div className="col-sm-12">
             <p className="h2 text-left">Live Anywhere</p>
